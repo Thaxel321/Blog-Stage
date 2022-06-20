@@ -5,3 +5,11 @@ controllers:
 kernel:
     resource: ../src/Kernel.php
     type: annotation
+
+app_logout:
+    path: /logout
+    methods: GET
+
+index :
+    path : /
+    controller: 'App\Controller\BlogController::index'

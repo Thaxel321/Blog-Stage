@@ -1,0 +1,8 @@
+<div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+    <div class="col p-4 d-flex flex-column position-static">
+        <h3 class="mb-0">{{article.title}}</h3>
+        <div class="mb-1 text-muted">{{ article.createAt | date("m/Y") }}</div>
+        <p class="card-text mb-auto">{{article.description}}</p>
+        <a href="{{ path('blog_show_article', {'id' : article.id}) }}" class="btn btn-primary">Voir l'article</a>
+    </div>
+</div>
